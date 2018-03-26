@@ -1,0 +1,4 @@
+# PhantasyMagic
+===
+## Licence
+No Licence
