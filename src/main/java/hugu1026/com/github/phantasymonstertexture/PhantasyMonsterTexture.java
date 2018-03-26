@@ -23,12 +23,12 @@ public final class PhantasyMonsterTexture extends JavaPlugin {
                     .filter(ArmorStand.class::isInstance)
                     .map(ArmorStand.class::cast)
                     .forEach(entity -> {
-                        if (entity.getFallDistance() == 0
+                        if (entity.getFallDistance() > 0
                                 && entity.hasGravity()) {
                             entity.remove();
-                    }
-            });
-        },1, 5);
+                        }
+                    });
+        }, 1, 5);
     }
 
     @Override
