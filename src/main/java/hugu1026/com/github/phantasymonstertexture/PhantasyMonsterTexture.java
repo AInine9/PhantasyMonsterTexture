@@ -1,5 +1,6 @@
 package hugu1026.com.github.phantasymonstertexture;
 
+import hugu1026.com.github.phantasymonstertexture.listener.EntitySpawn;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -20,6 +21,8 @@ public final class PhantasyMonsterTexture extends JavaPlugin {
 
     public void registerEvents() {
         PluginManager pm = Bukkit.getPluginManager();
+
+        pm.registerEvents(new EntitySpawn(), this);
     }
 
 }
