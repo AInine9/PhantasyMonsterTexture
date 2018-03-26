@@ -39,8 +39,6 @@ public class EntitySpawn implements Listener {
 
             armorStand.setHelmet(helmet);
             armorStand.setInvulnerable(true);
-            armorStand.setCustomName(event.getEntity().getCustomName());
-            armorStand.setCustomNameVisible(true);
             armorStand.setFallDistance(0);
             armorStand.setVisible(false);
 
