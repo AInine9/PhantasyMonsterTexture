@@ -43,6 +43,7 @@ public class EntitySpawn implements Listener {
             armorStand.setVisible(false);
 
             event.getEntity().setPassenger(armorStand);
+            event.getEntity().setSilent(true);
         }
     }
 }
