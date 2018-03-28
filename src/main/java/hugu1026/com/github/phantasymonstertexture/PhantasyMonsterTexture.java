@@ -17,7 +17,7 @@ public final class PhantasyMonsterTexture extends JavaPlugin {
 
         registerEvents();
 
-        Bukkit.getScheduler().scheduleSyncRepeatingTask(PhantasyMonsterTexture.getPlugin(PhantasyMonsterTexture.class), () -> {
+        Bukkit.getScheduler().scheduleSyncRepeatingTask(this, () -> {
             List<Entity> entities = Bukkit.getWorld("world").getEntities();
             entities.stream()
                     .filter(ArmorStand.class::isInstance)
